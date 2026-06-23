@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(231, 60, 60) ;
+    padding: 1rem 2rem;
+
+}
+h1{
+    color: white;
+}
+.right button{
+    margin: 0.5rem ;
+    font-size: 1rem;
+    color: white;
+    background-color:rgb(231, 60, 60) ;
+    border: none;
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+.search{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 167, 167);
+    
+}
+.searching{
+    width: 400px;
+    font-size: 1rem;
+    border-radius: 5px;
+    /* margin-bottom: 1rem; */
+    max-width: 60%;
+
+}
+.search>button{
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    padding-bottom: 0.5rem ;
+    /* margin-bottom: 1rem; */
+    background-color:rgb(231, 60, 60) ;
+    color: white;
+    border-radius: 10px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNI0MDTPrmq-zI8nl3t8ZRatjXA8hk5Pff-C_RgtStRBNdHuQnNs7mnXY&s=10);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+h2{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
+.hero>button{
+    background-color:rgb(231, 60, 60) ;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.mover{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.images{
+    height: 400px;
+     border: 0.5rem solid grey ;
+    background-color: grey;
+    width: 250px;
+}
+.movie{
+    display: flex;
+    /* justify-content: center; */
+    overflow-x: scroll;
+}
+.card{
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card> h3{
+    font-size: 2rem;
+}
+.bot{
+    margin-top: 2rem;
+    text-align: center;
+}
+.bot>img{
+    max-width: 80%;
+    border-radius: 10px;
+}
+@media (max-width:650px){
+    .logo, .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .movie{
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
